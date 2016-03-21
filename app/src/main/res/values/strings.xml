@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NDK1</string>
+    <string name="action_settings">Settings</string>
+    <string name="say_hi">Save or retrieve a value from the store:</string>
+    <string name="key">Key :</string>
+    <string name="value">Value :</string>
+    <string name="type">Type:</string>
+    <string name="get">Get Value</string>
+    <string name="set">Set Value</string>
+</resources>

@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.leon.ndk1.StoreActivityFragment"
+    tools:showIn="@layout/activity_store">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/say_hi"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/uiKeyLabel"
+                android:text="@string/key" />
+
+            <EditText
+                android:id="@+id/uiKeyEdit"
+                android:inputType="text">
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/uiValueLabel"
+                android:text="@string/value" />
+
+            <EditText
+                android:id="@+id/uiValueEdit"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/uiTypeLabel"
+                android:layout_height="match_parent"
+                android:text="@string/type" />
+
+            <Spinner android:id="@+id/uiTypeSpinner" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right">
+
+        <Button
+            android:id="@+id/uiGetValueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get" />
+
+        <Button
+            android:id="@+id/uiSetValueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set" />
+    </LinearLayout>
+
+
+</LinearLayout>
